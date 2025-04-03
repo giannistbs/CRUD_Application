@@ -29,6 +29,13 @@ A Spring Boot CRUD application for managing space station resources on Mars. Thi
 - Docker and Docker Compose
 - MongoDB (if running locally without Docker)
 
+### Using Docker Compose
+
+1. Build and start the containers:
+   ```bash
+   docker-compose up --build
+   ```
+
 ### Running Locally
 
 1. Clone the repository:
@@ -47,12 +54,6 @@ A Spring Boot CRUD application for managing space station resources on Mars. Thi
    java -jar target/mission-control-0.0.1-SNAPSHOT.jar
    ```
 
-### Using Docker Compose
-
-1. Build and start the containers:
-   ```bash
-   docker-compose up --build
-   ```
 
 2. The application will be available at `http://localhost:8080`
 
@@ -93,13 +94,7 @@ The project includes a GitHub Actions workflow that:
 1. Builds the application
 2. Runs tests
 3. Builds the Docker image
-4. Pushes the image to Docker Hub
-
-### Required Secrets
-
-The following secrets need to be configured in your GitHub repository:
-- `DOCKERHUB_USERNAME`: Your Docker Hub username
-- `DOCKERHUB_TOKEN`: Your Docker Hub access token
+4. Pushes the image to Docker Hub // todo
 
 ## 📝 License
 
